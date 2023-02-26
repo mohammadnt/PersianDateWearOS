@@ -2,6 +2,7 @@
     <string name="app_name">MNT Persian Date</string>
     <string name="intro_text">Swipe edge to exit the map.</string>
     <string name="title_persian_date">MNT Persian Date</string>
+    <string name="hello_world">Hello World</string>
 
 
 </resources>
