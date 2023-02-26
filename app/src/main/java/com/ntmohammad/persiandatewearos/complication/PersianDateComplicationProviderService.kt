@@ -14,12 +14,14 @@
 package com.ntmohammad.persiandatewearos.complication
 
 import android.Manifest
+import android.R
 import android.content.ComponentName
 import android.content.Context
 import android.content.pm.PackageManager
 import androidx.wear.watchface.complications.data.*
 import androidx.wear.watchface.complications.datasource.ComplicationDataSourceUpdateRequester
 import androidx.wear.watchface.complications.datasource.ComplicationRequest
+import androidx.wear.watchface.complications.rendering.ComplicationDrawable
 import com.ntmohammad.persiandatewearos.PersianDateActivity.Companion.tapAction
 import com.ntmohammad.persiandatewearos.data.MyDateModel
 import com.ntmohammad.persiandatewearos.data.withPersianDigits

@@ -12,7 +12,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_my_location"
+        android:icon="@drawable/ic_calendar"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.DeviceDefault">
@@ -38,7 +38,7 @@
         <service
             android:exported="true"
             android:name=".complication.PersianDateComplicationProviderService"
-            android:icon="@drawable/ic_my_location"
+            android:icon="@drawable/ic_calendar"
             android:label="@string/app_name"
             android:permission="com.google.android.wearable.permission.BIND_COMPLICATION_PROVIDER">
             <intent-filter>
@@ -68,7 +68,7 @@
             android:exported="true"
             android:name=".tile.PersianDateTileProviderService"
             android:label="@string/title_persian_date"
-            android:icon="@drawable/ic_my_location"
+            android:icon="@drawable/ic_calendar"
             android:permission="com.google.android.wearable.permission.BIND_TILE_PROVIDER">
             <intent-filter>
                 <action android:name="androidx.wear.tiles.action.BIND_TILE_PROVIDER" />
@@ -76,7 +76,7 @@
 
             <meta-data
                 android:name="androidx.wear.tiles.PREVIEW"
-                android:resource="@drawable/ic_my_location" />
+                android:resource="@drawable/ic_calendar" />
         </service>
     </application>
 
