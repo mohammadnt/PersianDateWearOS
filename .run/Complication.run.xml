@@ -10,7 +10,7 @@
         </ChosenSlot>
       </list>
     </option>
-    <option name="componentName" value="com.google.wear.whereami.complication.WhereAmIComplicationProviderService" />
+    <option name="componentName" value="com.ntmohammad.persiandatewearos.complication.WhereAmIComplicationProviderService" />
     <option name="installFlags" value="" />
     <option name="projectPathOnTarget" />
     <option name="selectedOptions">

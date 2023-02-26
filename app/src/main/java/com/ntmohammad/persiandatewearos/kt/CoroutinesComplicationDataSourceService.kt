@@ -11,7 +11,7 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-package com.google.wear.whereami.kt
+package com.ntmohammad.persiandatewearos.kt
 
 import androidx.wear.watchface.complications.data.ComplicationData
 import androidx.wear.watchface.complications.data.ComplicationType

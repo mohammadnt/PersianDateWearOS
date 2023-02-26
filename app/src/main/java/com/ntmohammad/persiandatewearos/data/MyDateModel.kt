@@ -1,4 +1,4 @@
-package com.google.wear.whereami.data
+package com.ntmohammad.persiandatewearos.data
 
 private val PERSIAN_DIGITS = charArrayOf(
     '0' + 1728,

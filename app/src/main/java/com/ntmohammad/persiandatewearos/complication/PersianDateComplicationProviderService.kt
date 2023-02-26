@@ -11,27 +11,25 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-package com.google.wear.whereami.complication
+package com.ntmohammad.persiandatewearos.complication
 
 import android.Manifest
 import android.content.ComponentName
 import android.content.Context
 import android.content.pm.PackageManager
-import android.graphics.drawable.Icon
 import androidx.wear.watchface.complications.data.*
 import androidx.wear.watchface.complications.datasource.ComplicationDataSourceUpdateRequester
 import androidx.wear.watchface.complications.datasource.ComplicationRequest
-import com.google.wear.whereami.R
-import com.google.wear.whereami.WhereAmIActivity.Companion.tapAction
-import com.google.wear.whereami.data.MyDateModel
-import com.google.wear.whereami.data.withPersianDigits
-import com.google.wear.whereami.kt.CoroutinesComplicationDataSourceService
+import com.ntmohammad.persiandatewearos.PersianDateActivity.Companion.tapAction
+import com.ntmohammad.persiandatewearos.data.MyDateModel
+import com.ntmohammad.persiandatewearos.data.withPersianDigits
+import com.ntmohammad.persiandatewearos.kt.CoroutinesComplicationDataSourceService
 import saman.zamani.persiandate.PersianDate
 import saman.zamani.persiandate.PersianDateFormat
 import java.util.*
 
 
-class WhereAmIComplicationProviderService : CoroutinesComplicationDataSourceService() {
+class PersianDateComplicationProviderService : CoroutinesComplicationDataSourceService() {
 
 
     override fun onCreate() {
@@ -96,7 +94,7 @@ class WhereAmIComplicationProviderService : CoroutinesComplicationDataSourceServ
                 val request =
                     ComplicationDataSourceUpdateRequester.create(
                         applicationContext, ComponentName(
-                            applicationContext, WhereAmIComplicationProviderService::class.java
+                            applicationContext, PersianDateComplicationProviderService::class.java
                         )
                     )
                 request.requestUpdateAll()

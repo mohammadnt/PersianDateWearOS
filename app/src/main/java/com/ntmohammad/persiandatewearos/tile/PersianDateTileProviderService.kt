@@ -11,27 +11,27 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-package com.google.wear.whereami.tile
+package com.ntmohammad.persiandatewearos.tile
 
 import androidx.wear.tiles.LayoutElementBuilders.HORIZONTAL_ALIGN_CENTER
 import androidx.wear.tiles.RequestBuilders
 import androidx.wear.tiles.ResourceBuilders
 import androidx.wear.tiles.TileBuilders.Tile
 import com.google.android.horologist.tiles.CoroutinesTileService
-import com.google.wear.whereami.WhereAmIActivity
-import com.google.wear.whereami.kt.activityClickable
-import com.google.wear.whereami.kt.column
-import com.google.wear.whereami.kt.fontStyle
-import com.google.wear.whereami.kt.layout
-import com.google.wear.whereami.kt.modifiers
-import com.google.wear.whereami.kt.text
-import com.google.wear.whereami.kt.tile
-import com.google.wear.whereami.kt.timeline
-import com.google.wear.whereami.kt.timelineEntry
-import com.google.wear.whereami.kt.toContentDescription
-import com.google.wear.whereami.kt.toSpProp
+import com.ntmohammad.persiandatewearos.PersianDateActivity
+import com.ntmohammad.persiandatewearos.kt.activityClickable
+import com.ntmohammad.persiandatewearos.kt.column
+import com.ntmohammad.persiandatewearos.kt.fontStyle
+import com.ntmohammad.persiandatewearos.kt.layout
+import com.ntmohammad.persiandatewearos.kt.modifiers
+import com.ntmohammad.persiandatewearos.kt.text
+import com.ntmohammad.persiandatewearos.kt.tile
+import com.ntmohammad.persiandatewearos.kt.timeline
+import com.ntmohammad.persiandatewearos.kt.timelineEntry
+import com.ntmohammad.persiandatewearos.kt.toContentDescription
+import com.ntmohammad.persiandatewearos.kt.toSpProp
 
-class WhereAmITileProviderService : CoroutinesTileService() {
+class PersianDateTileProviderService : CoroutinesTileService() {
 
     override fun onCreate() {
         super.onCreate()
@@ -54,8 +54,8 @@ class WhereAmITileProviderService : CoroutinesTileService() {
                                     setSemantics("desc".toContentDescription())
                                     setClickable(
                                         activityClickable(
-                                            this@WhereAmITileProviderService.packageName,
-                                            WhereAmIActivity::class.java.name
+                                            this@PersianDateTileProviderService.packageName,
+                                            PersianDateActivity::class.java.name
                                         )
                                     )
                                 }

@@ -11,7 +11,7 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-package com.google.wear.whereami
+package com.ntmohammad.persiandatewearos
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -24,16 +24,16 @@ import androidx.fragment.app.FragmentActivity
 import com.fondesa.kpermissions.allGranted
 import com.fondesa.kpermissions.coroutines.sendSuspend
 import com.fondesa.kpermissions.extension.permissionsBuilder
-import com.google.wear.whereami.complication.WhereAmIComplicationProviderService.Companion.forceComplicationUpdate
+import com.ntmohammad.persiandatewearos.complication.PersianDateComplicationProviderService.Companion.forceComplicationUpdate
 
-class WhereAmIActivity : FragmentActivity() {
+class PersianDateActivity : FragmentActivity() {
 
     private lateinit var textView: TextView
 
     @SuppressLint("MissingPermission")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.where_am_i_activity)
+        setContentView(R.layout.activity)
 //        textView = findViewById(R.id.text)
 //
 //        locationViewModel = LocationViewModel(applicationContext)
@@ -70,7 +70,7 @@ class WhereAmIActivity : FragmentActivity() {
 
     companion object {
         fun Context.tapAction(): PendingIntent? {
-            val intent = Intent(this, WhereAmIActivity::class.java)
+            val intent = Intent(this, PersianDateActivity::class.java)
                 .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             return PendingIntent.getActivity(
                 this,

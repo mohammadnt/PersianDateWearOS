@@ -6,7 +6,7 @@ plugins {
 android {
     compileSdk 31
     defaultConfig {
-        applicationId "com.google.wear.whereami"
+        applicationId "com.ntmohammad.persiandatewearos"
         minSdk 26
         targetSdk 30
 
@@ -23,23 +23,22 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    namespace 'com.ntmohammad.persiandatewearos'
 }
 
 dependencies {
-    implementation "com.google.android.gms:play-services-wearable:17.1.0"
+    implementation "com.google.android.gms:play-services-wearable:18.0.0"
     implementation "androidx.wear:wear:1.2.0"
-    implementation "androidx.lifecycle:lifecycle-service:2.4.1"
-    implementation "com.google.android.gms:play-services-maps:18.0.2"
-    implementation "androidx.wear.watchface:watchface-complications-data:1.1.0-alpha04"
-    implementation "androidx.wear.watchface:watchface-complications-data-source:1.1.0-alpha04"
-    implementation "androidx.wear.watchface:watchface-complications-data-source-ktx:1.1.0-alpha04"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
+    implementation "androidx.lifecycle:lifecycle-service:2.5.1"
+    implementation "com.google.android.gms:play-services-maps:18.1.0"
+    implementation "androidx.wear.watchface:watchface-complications-data:1.2.0-alpha07"
+    implementation "androidx.wear.watchface:watchface-complications-data-source:1.2.0-alpha07"
+    implementation "androidx.wear.watchface:watchface-complications-data-source-ktx:1.2.0-alpha07"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.0"
-    implementation "androidx.wear.tiles:tiles:1.1.0-alpha03"
+    implementation "androidx.wear.tiles:tiles:1.1.0"
     implementation "com.google.android.horologist:horologist-tiles:0.0.2"
-    implementation "com.google.android.gms:play-services-location:19.0.1"
-    implementation "com.patloew.colocation:colocation:1.1.0"
     implementation "com.github.fondesa:kpermissions-coroutines:3.3.0"
     implementation 'com.github.samanzamani:PersianDate:1.6.1'
 }
